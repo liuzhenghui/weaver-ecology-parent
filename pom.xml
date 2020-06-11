@@ -9,10 +9,11 @@
     <version>9.0.0</version>
     <packaging>pom</packaging>
 
-
+    <name>weaver-ecology-parent</name>
     <url>https://github.com/liuzhenghui/weaver-ecology-parent</url>
-    <description>ecology core for Java</description>
+    <description>ecology parent for Java</description>
 
+    <!-- 版权许可 -->
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -20,6 +21,7 @@
         </license>
     </licenses>
 
+    <!-- 开发者信息 -->
     <developers>
         <developer>
             <name>liuzhenghui</name>
@@ -28,12 +30,14 @@
         </developer>
     </developers>
 
+    <!-- 代码库 -->
     <scm>
         <url>https://github.com/liuzhenghui/weaver-ecology-parent</url>
         <connection>https://github.com/liuzhenghui/weaver-ecology-parent.git</connection>
         <developerConnection>https://github.com/liuzhenghui</developerConnection>
     </scm>
 
+    <!-- 定义snapshots库和releases库的nexus地址 -->
     <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
@@ -214,6 +218,28 @@
                                 </goals>
                             </execution>
                         </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.sonatype.plugins</groupId>
+                        <artifactId>nexus-staging-maven-plugin</artifactId>
+                        <version>1.6.7</version>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <serverId>ossrh</serverId>
+                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-release-plugin</artifactId>
+                        <version>2.5.3</version>
+                        <configuration>
+                            <autoVersionSubmodules>true</autoVersionSubmodules>
+                            <useReleaseProfile>false</useReleaseProfile>
+                            <releaseProfiles>release</releaseProfiles>
+                            <goals>deploy</goals>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
