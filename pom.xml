@@ -6,7 +6,7 @@
 
     <groupId>com.github.liuzhenghui</groupId>
     <artifactId>weaver-ecology-parent</artifactId>
-    <version>9.0.0.2</version>
+    <version>9.0.0.3</version>
     <packaging>pom</packaging>
 
     <name>weaver-ecology-parent</name>
@@ -55,7 +55,7 @@
         <dependency>
             <groupId>com.github.liuzhenghui</groupId>
             <artifactId>weaver-ecology-core</artifactId>
-            <version>9.0.0</version>
+            <version>9.0.1</version>
             <scope>provided</scope>
         </dependency>
 
