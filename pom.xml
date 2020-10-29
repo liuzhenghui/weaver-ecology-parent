@@ -6,7 +6,7 @@
 
     <groupId>com.github.liuzhenghui</groupId>
     <artifactId>weaver-ecology-parent</artifactId>
-    <version>9.00.2003.13.6</version>
+    <version>9.00.2003.13.7</version>
     <packaging>pom</packaging>
 
     <name>weaver-ecology-parent</name>
@@ -1111,6 +1111,18 @@
             <groupId>net.sourceforge.javacsv</groupId>
             <artifactId>javacsv</artifactId>
             <version>2.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcpg-jdk15on</artifactId>
+            <version>1.52</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-ext-jdk16</artifactId>
+            <version>1.45</version>
             <scope>provided</scope>
         </dependency>
 
