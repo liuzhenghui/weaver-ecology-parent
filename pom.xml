@@ -599,7 +599,7 @@
         <dependency>
             <groupId>net.sf.mpxj</groupId>
             <artifactId>mpxj</artifactId>
-            <version>7.4.3</version>
+            <version>8.3.5</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
