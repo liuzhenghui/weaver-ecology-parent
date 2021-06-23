@@ -54,7 +54,7 @@
         <dependency>
             <groupId>com.github.liuzhenghui</groupId>
             <artifactId>weaver-ecology-core</artifactId>
-            <version>9.00.2102.12</version>
+            <version>9.00.2003.13.4</version>
             <scope>provided</scope>
         </dependency>
 
